@@ -1,0 +1,10 @@
+# Create Free tier RDS-DB in connected AWS account
+
+# Connect to instance (default SG+NSX-Rules in VMC to be setup!)
+mysql --host=tito-db.cbl0repmzcuq.eu-central-1.rds.amazonaws.com --user=root --password=VMware1!
+
+# Create DB in the RDS
+create database if not exists TitoDB;
+use TitoDB;
+CREATE TABLE TitoTable (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, home VARCHAR(50) NOT NULL, work VARCHAR(50) NOT NULL, hour_home_departure VARCHAR(50) NOT NULL, hour_work_departure VARCHAR(50) NOT NULL);
+
