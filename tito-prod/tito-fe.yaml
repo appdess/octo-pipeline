@@ -9,7 +9,7 @@ metadata:
   data:
   password: Vk13YXJlMSE=
   # Password created like this: echo -n 'VMware1!' | base64
-
+---
 
 apiVersion: apps/v1
 kind: Deployment
