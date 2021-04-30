@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: mysql-pass
+  namespace: tito-prod
   labels:
     app: tito
   type: Opaque
@@ -15,13 +16,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: titofe
+  namespace: tito-prod
   labels:
     name: tito-fe
     version: "latest"
     app: tito
     tier: frontend
     stage: prod
-    namespace: default
+    namespace: tito-prod
 spec:
   replicas: 4
   selector:
@@ -67,11 +69,12 @@ apiVersion: v1
 kind: Service
 metadata:
   name: titofe-service
+  namespace: tito-prod
   labels:
     app: tito
     tier: frontend
     stage: prod
-    namespace: default
+    namespace: tito-prod
 spec:
   type: LoadBalancer
   ports:

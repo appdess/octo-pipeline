@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: tito
-  namespace: default
+  namespace: tito-prod
 spec:
   rules:
   - host: tito.set.local
