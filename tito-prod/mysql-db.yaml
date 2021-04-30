@@ -31,7 +31,6 @@ spec:
       containers:
       - image: adess/tito-db
         name: mysql
-        namespace: tito-prod
         env:
           # Use secret in real usage
         - name: MYSQL_ROOT_PASSWORD
