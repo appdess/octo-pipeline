@@ -8,3 +8,7 @@ resource "aws_elasticache_cluster" "titocache-tf" {
   port                 = 11211
   subnet_group_name    = "default"
 }
+
+output "cluster-address" {
+  value = aws_elasticache_cluster.titocache-tf.cluster_address
+}
