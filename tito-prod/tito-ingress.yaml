@@ -5,7 +5,7 @@ metadata:
   namespace: tito-prod
 spec:
   rules:
-  - host: tito.set.local
+  - host: tito.cemeavmc.lab
     http:
       paths:
       - backend:
