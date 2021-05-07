@@ -1,6 +1,5 @@
 #!/bin/bash
 
-kubectl create ns monitoring
 # add prom community repo:
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
