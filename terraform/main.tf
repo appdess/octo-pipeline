@@ -7,6 +7,4 @@ provider "aws" {
 /* Export your credentials like:
 export AWS_ACCESS_KEY_ID=EXAMPLE
 export AWS_SECRET_ACCESS_KEY=EXAMPLEs
-export AWS_ACCESS_KEY_ID=EXAMPLEasdf
-export AWS_SECRET_ACCESS_KEY=EXAMPLE
 */
